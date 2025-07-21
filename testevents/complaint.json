@@ -1,0 +1,12 @@
+{
+    "complainedRecipients":[
+        {
+        "emailAddress":"complaint@example.com"
+        }
+    ],
+    "timestamp":"2017-08-05T00:41:02.669Z",
+    "feedbackId":"01000157c44f053b-61b59c11-9236-11e6-8f96-7be8aexample-000000",
+    "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36",
+    "complaintFeedbackType":"abuse",
+    "arrivalDate":"2017-08-05T00:41:02.669Z"
+}

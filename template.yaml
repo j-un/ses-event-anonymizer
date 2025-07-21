@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Lambda function to mask PII in SES events for Kinesis Data Firehose.
+
+Globals:
+  Function:
+    Timeout: 60
+    MemorySize: 128
+
+Resources:
+  MainFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: bootstrap
+      Runtime: provided.al2023
+      CodeUri: .
+      Architectures:
+        - arm64
+      Policies:
+        - AWSLambdaBasicExecutionRole # Grants permission to write logs to CloudWatch Logs
+    Metadata:
+      BuildMethod: makefile
+
+Outputs:
+  MainFunctionArn:
+    Description: "ARN of the Masking Lambda Function"
+    Value: !GetAtt MainFunction.Arn
