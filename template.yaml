@@ -18,6 +18,8 @@ Resources:
         - arm64
       Policies:
         - AWSLambdaBasicExecutionRole # Grants permission to write logs to CloudWatch Logs
+      Tags:
+        RepositoryUrl: "https://github.com/j-un/ses-event-anonymizer"
     Metadata:
       BuildMethod: makefile
 
