@@ -1,6 +1,6 @@
-module lambda-mask-pii
+module ses-event-anonymizer
 
-go 1.24.4
+go 1.24.5
 
 require (
 	github.com/aws/aws-lambda-go v1.49.0
