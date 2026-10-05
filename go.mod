@@ -3,7 +3,7 @@ module ses-event-anonymizer
 go 1.26
 
 require (
-	github.com/aws/aws-lambda-go v1.55.0
+	github.com/aws/aws-lambda-go v1.55.1
 	github.com/stretchr/testify v1.12.1
 )
 
